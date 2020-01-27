@@ -1,0 +1,17 @@
+<class 'dict'>
+
+ Command Line Arguments: data dir = flowerssmall 
+    arch = vgg16 
+ save dir = savedir 
+    learning rate =  0.001 
+    epoc =  5 
+    gpu =  cpu
+Hidden Units : 1000,250
+Hidden Units Array: [1000, 250]
+device from Torch is  cpu
+device to be used is  cpu
+Setup Data Started
+Setup Data Ended
+Init Model Started for Training
+An error occured in setting archtitecture to the assigned  Network model. Can not proceed :  name 'OrderedDict' is not defined
+initializeModel() failed. Exiting  the code. The previous print statement provides details of failures

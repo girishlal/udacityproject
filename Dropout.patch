@@ -1,0 +1,23 @@
+--- /opt/conda/lib/python3.6/site-packages/torch/nn/modules/dropout.py
++++ /opt/conda/lib/python3.6/site-packages/torch/nn/modules/dropout.py
+@@ -1,8 +1,7 @@
+ class Dropout(_DropoutNd):
+     r"""During training, randomly zeroes some of the elements of the input
+     tensor with probability :attr:`p` using samples from a Bernoulli
+-    distribution. Each channel will be zeroed out independently on every forward
+-    call.
++    distribution. The elements to zero are randomized on every forward call.
+ 
+     This has proven to be an effective technique for regularization and
+     preventing the co-adaptation of neurons as described in the paper
+@@ -18,8 +17,8 @@
+         inplace: If set to ``True``, will do this operation in-place. Default: ``False``
+ 
+     Shape:
+-        - Input: :math:`(*)`. Input can be of any shape
+-        - Output: :math:`(*)`. Output is of the same shape as input
++        - Input: `Any`. Input can be of any shape
++        - Output: `Same`. Output is of the same shape as input
+ 
+     Examples::
+ 
